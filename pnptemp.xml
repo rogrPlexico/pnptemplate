@@ -26,9 +26,17 @@
         </pnp:CurrentNavigation>
       </pnp:Navigation>
       <pnp:Lists>
-        <pnp:ListInstance Title="Discovery Dropoff" Description="" DocumentTemplate="{site}/DiscoveryDropoff/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="DiscoveryDropoff" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/DiscoveryDropoff/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/DiscoveryDropoff/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/DiscoveryDropoff/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+        <pnp:ListInstance Title="Discovery Dropoff" Description="" DocumentTemplate="{site}/DiscoveryDropoff/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="DiscoveryDropoff" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/DiscoveryDropoff/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/DiscoveryDropoff/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/DiscoveryDropoff/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
+          </pnp:PropertyBagEntries>
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01010017DC2EE713960C4293705AD7512BE79A" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010100DF1AA21D037FC141A77B18DAB25DA623" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101007014B50394B45C45A5A07FF980B7E25C" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010100E9ADC82A55C18B48B1B7AEAFF53F140F" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
@@ -48,11 +56,6 @@
               <JSLink>clienttemplates.js</JSLink>
             </View>
           </pnp:Views>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
-            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
-            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
-          </pnp:FieldRefs>
           <pnp:Security>
             <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
               <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
@@ -197,9 +200,17 @@
             <pnp:FieldDefault FieldName="Category" />
           </pnp:FieldDefaults>
         </pnp:ListInstance>
-        <pnp:ListInstance Title="External Documents" Description="" DocumentTemplate="{site}/ExternalDocuments/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="ExternalDocuments" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/ExternalDocuments/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/ExternalDocuments/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/ExternalDocuments/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+        <pnp:ListInstance Title="External Documents" Description="" DocumentTemplate="{site}/ExternalDocuments/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="ExternalDocuments" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/ExternalDocuments/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/ExternalDocuments/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/ExternalDocuments/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
+          </pnp:PropertyBagEntries>
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01010017DC2EE713960C4293705AD7512BE79A" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010100DF1AA21D037FC141A77B18DAB25DA623" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101007014B50394B45C45A5A07FF980B7E25C" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010100E9ADC82A55C18B48B1B7AEAFF53F140F" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
@@ -219,11 +230,6 @@
               <JSLink>clienttemplates.js</JSLink>
             </View>
           </pnp:Views>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
-            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
-            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
-          </pnp:FieldRefs>
           <pnp:Security>
             <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
               <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
@@ -236,9 +242,17 @@
             <pnp:Webhook ServerNotificationUrl="https://publisher.windows.net:443/api/publish?format=Microsoft.FileServices&amp;graphsubscriptionid=1fc0dd78-98ad-445a-8c32-9256a9f0dd05" ExpiresInDays="12" />
           </pnp:Webhooks>
         </pnp:ListInstance>
-        <pnp:ListInstance Title="Internal Documents" Description="" DocumentTemplate="{site}/InternalDocuments/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="InternalDocuments" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/InternalDocuments/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/InternalDocuments/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/InternalDocuments/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+        <pnp:ListInstance Title="Internal Documents" Description="" DocumentTemplate="{site}/InternalDocuments/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="InternalDocuments" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/InternalDocuments/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/InternalDocuments/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/InternalDocuments/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
+          </pnp:PropertyBagEntries>
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01010017DC2EE713960C4293705AD7512BE79A" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010100DF1AA21D037FC141A77B18DAB25DA623" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101007014B50394B45C45A5A07FF980B7E25C" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010100E9ADC82A55C18B48B1B7AEAFF53F140F" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
@@ -256,14 +270,10 @@
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <JSLink>clienttemplates.js</JSLink>
-              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"templateId":"NewDOC","title":"Word document","visible":true},{"templateId":"NewXSL","title":"Excel workbook","visible":true},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":true},{"templateId":"NewONE","title":"OneNote notebook","visible":true},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":true},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":true},{"templateId":"NewVSDX","title":"Visio drawing","visible":true},{"contentTypeId":"{listcontenttypeid:Internal\ Documents,0x0101}","isUpload":true,"templateId":"Exhibit Tabs for NY","title":"Exhibit Tabs for NY","url":"{site}/InternalDocuments/Forms/Exhibit Tabs for NY.docx","visible":true},{"contentTypeId":"{listcontenttypeid:Internal\ Documents,0x0101}","isUpload":true,"templateId":"Summons and Complaint (AKA and Co-Owners)","title":"Summons and Complaint (AKA and Co-Owners)","url":"{site}/InternalDocuments/Forms/Summons and Complaint (AKA and Co-Owners).docx","visible":true},{"contentTypeId":"{listcontenttypeid:Internal\ Documents,0x0101}","isUpload":true,"templateId":"Summons and Complaint (Sole Prop with 2 K's)","title":"Summons and Complaint (Sole Prop with 2 K's)","url":"{site}/InternalDocuments/Forms/Summons and Complaint (Sole Prop with 2 K's).docx","visible":true},{"contentTypeId":"{listcontenttypeid:Internal\ Documents,0x0101}","isUpload":true,"templateId":"Summons and Complaint (DRAFT)","title":"Summons and Complaint (DRAFT)","url":"{site}/InternalDocuments/Forms/Summons and Complaint (DRAFT).docx","visible":true},{"contentTypeId":"{listcontenttypeid:Internal\ Documents,0x0101}","isUpload":true,"templateId":"Summons and Complaint (Sole Prop TEMPLATE)","title":"Summons and Complaint (Sole Prop TEMPLATE)","url":"{site}/InternalDocuments/Forms/Summons and Complaint (Sole Prop TEMPLATE).docx","visible":true}]</NewDocumentTemplates>
+              <CustomFormatter />
+              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"templateId":"NewDOC","title":"Word document","visible":true},{"templateId":"NewXSL","title":"Excel workbook","visible":true},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":true},{"templateId":"NewONE","title":"OneNote notebook","visible":false},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":false},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":false},{"templateId":"NewVSDX","title":"Visio drawing","visible":false}]</NewDocumentTemplates>
             </View>
           </pnp:Views>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
-            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
-            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
-          </pnp:FieldRefs>
           <pnp:Security>
             <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
               <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
