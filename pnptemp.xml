@@ -53,6 +53,14 @@
             <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
             <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
           </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Edit" />
+              <pnp:RoleAssignment Principal="LitigationCenter Users" RoleDefinition="ListLockdown" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
           <pnp:Webhooks>
             <pnp:Webhook ServerNotificationUrl="https://publisher.windows.net:443/api/publish?format=Microsoft.FileServices&amp;graphsubscriptionid=af331a1b-e08b-499c-813e-6caf975b9f92" ExpiresInDays="12" />
           </pnp:Webhooks>
@@ -216,6 +224,14 @@
             <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
             <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
           </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Edit" />
+              <pnp:RoleAssignment Principal="LitigationCenter Users" RoleDefinition="ListLockdown" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
           <pnp:Webhooks>
             <pnp:Webhook ServerNotificationUrl="https://publisher.windows.net:443/api/publish?format=Microsoft.FileServices&amp;graphsubscriptionid=1fc0dd78-98ad-445a-8c32-9256a9f0dd05" ExpiresInDays="12" />
           </pnp:Webhooks>
@@ -248,6 +264,14 @@
             <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
             <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
           </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Edit" />
+              <pnp:RoleAssignment Principal="LitigationCenter Users" RoleDefinition="ListLockdown" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
           <pnp:Webhooks>
             <pnp:Webhook ServerNotificationUrl="https://publisher.windows.net:443/api/publish?format=Microsoft.FileServices&amp;graphsubscriptionid=c9669c29-c70e-40a0-80f8-37e2fa11debb" ExpiresInDays="12" />
           </pnp:Webhooks>
