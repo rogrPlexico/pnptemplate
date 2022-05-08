@@ -16,12 +16,12 @@
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
           <pnp:StructuralNavigation RemoveExistingNodes="true">
             <pnp:NavigationNode Title="LITIGATION CENTER" Url="/sites/LitigationCenter" />
-            <pnp:NavigationNode Title="Template Library" Url="/sites/LitigationCenter/TemplateLibrary/Forms/AllItems.aspx" />
-            <pnp:NavigationNode Title="------" Url="/sites/LitigationCenter/#/" />
-
+ <pnp:NavigationNode Title="Template Library" Url="/sites/LitigationCenter/TemplateLibrary/Forms/AllItems.aspx" />
+<pnp:NavigationNode Title="------" Url="/sites/LitigationCenter/@{variables('Invoice Number')}#/" />
             <pnp:NavigationNode Title="Internal Documents" Url="{site}/InternalDocuments/Forms/AllItems.aspx" />
             <pnp:NavigationNode Title="External Documents" Url="{site}/ExternalDocuments/Forms/AllItems.aspx" />
             <pnp:NavigationNode Title="Discovery Dropoff" Url="{site}/DiscoveryDropoff/Forms/AllItems.aspx" />
+           
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
