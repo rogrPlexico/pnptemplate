@@ -31,16 +31,16 @@
             <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
           </pnp:PropertyBagEntries>
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" />
             <pnp:ContentTypeBinding ContentTypeID="0x01010017DC2EE713960C4293705AD7512BE79A" />
             <pnp:ContentTypeBinding ContentTypeID="0x010100DF1AA21D037FC141A77B18DAB25DA623" />
             <pnp:ContentTypeBinding ContentTypeID="0x0101007014B50394B45C45A5A07FF980B7E25C" />
             <pnp:ContentTypeBinding ContentTypeID="0x010100E9ADC82A55C18B48B1B7AEAFF53F140F" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{8AD18458-4EDD-4DAB-9803-BB98E4565685}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/DiscoveryDropoff/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <View Name="{35ED850E-877D-443A-86BB-4E494D3CA683}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/DiscoveryDropoff/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
               <Query>
                 <OrderBy>
                   <FieldRef Name="FileLeafRef" />
@@ -51,9 +51,15 @@
                 <FieldRef Name="LinkFilename" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Editor" />
+                <FieldRef Name="ContentType" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="_UIVersionString" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"templateId":"NewDOC","title":"Word document","visible":false},{"templateId":"NewXSL","title":"Excel workbook","visible":true},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":true},{"templateId":"NewONE","title":"OneNote notebook","visible":false},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":false},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":false},{"templateId":"NewVSDX","title":"Visio drawing","visible":false}]</NewDocumentTemplates>
             </View>
           </pnp:Views>
           <pnp:Security>
@@ -205,16 +211,16 @@
             <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
           </pnp:PropertyBagEntries>
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" />
             <pnp:ContentTypeBinding ContentTypeID="0x01010017DC2EE713960C4293705AD7512BE79A" />
             <pnp:ContentTypeBinding ContentTypeID="0x010100DF1AA21D037FC141A77B18DAB25DA623" />
             <pnp:ContentTypeBinding ContentTypeID="0x0101007014B50394B45C45A5A07FF980B7E25C" />
             <pnp:ContentTypeBinding ContentTypeID="0x010100E9ADC82A55C18B48B1B7AEAFF53F140F" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{3710A359-10F1-44D1-9C23-ECF134A36615}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/ExternalDocuments/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <View Name="{97D2B01E-1D2C-4FE0-9314-AE6C2AF2AD53}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/ExternalDocuments/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
               <Query>
                 <OrderBy>
                   <FieldRef Name="FileLeafRef" />
@@ -225,9 +231,15 @@
                 <FieldRef Name="LinkFilename" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Editor" />
+                <FieldRef Name="ContentType" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="_UIVersionString" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"templateId":"NewDOC","title":"Word document","visible":false},{"templateId":"NewXSL","title":"Excel workbook","visible":true},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":true},{"templateId":"NewONE","title":"OneNote notebook","visible":false},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":false},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":false},{"templateId":"NewVSDX","title":"Visio drawing","visible":false}]</NewDocumentTemplates>
             </View>
           </pnp:Views>
           <pnp:Security>
@@ -247,16 +259,16 @@
             <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
           </pnp:PropertyBagEntries>
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101001BC29E8FD1DD69489ECCFA993D323F6D" />
             <pnp:ContentTypeBinding ContentTypeID="0x01010017DC2EE713960C4293705AD7512BE79A" />
             <pnp:ContentTypeBinding ContentTypeID="0x010100DF1AA21D037FC141A77B18DAB25DA623" />
             <pnp:ContentTypeBinding ContentTypeID="0x0101007014B50394B45C45A5A07FF980B7E25C" />
             <pnp:ContentTypeBinding ContentTypeID="0x010100E9ADC82A55C18B48B1B7AEAFF53F140F" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{3C614F3C-D067-41B3-9242-F05B566A7699}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/InternalDocuments/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <View Name="{3ADD8D01-D1AB-4D1A-B135-42504FE6CB59}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/InternalDocuments/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
               <Query>
                 <OrderBy>
                   <FieldRef Name="FileLeafRef" />
@@ -267,11 +279,15 @@
                 <FieldRef Name="LinkFilename" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Editor" />
+                <FieldRef Name="ContentType" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="_UIVersionString" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
               <CustomFormatter />
-              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"templateId":"NewDOC","title":"Word document","visible":true},{"templateId":"NewXSL","title":"Excel workbook","visible":true},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":true},{"templateId":"NewONE","title":"OneNote notebook","visible":false},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":false},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":false},{"templateId":"NewVSDX","title":"Visio drawing","visible":false}]</NewDocumentTemplates>
+              <NewDocumentTemplates>[{"templateId":"NewFolder","title":"Folder","visible":true},{"templateId":"NewDOC","title":"Word document","visible":false},{"templateId":"NewXSL","title":"Excel workbook","visible":true},{"templateId":"NewPPT","title":"PowerPoint presentation","visible":true},{"templateId":"NewONE","title":"OneNote notebook","visible":false},{"templateId":"NewXSLSurvey","title":"Excel survey","visible":false},{"templateId":"NewXSLForm","title":"Forms for Excel","visible":false},{"templateId":"NewVSDX","title":"Visio drawing","visible":false}]</NewDocumentTemplates>
             </View>
           </pnp:Views>
           <pnp:Security>
